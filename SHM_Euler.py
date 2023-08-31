@@ -60,7 +60,7 @@ def update_plot(i):
     ax4.clear()
     ax4.set_xlim(min(x), max(x))
     ax4.set_ylim(min(v), max(v))
-    ax4.plot(x[:i], v[:i], '.')
+    ax4.plot(x[:i], v[:i], '-')
     ax4.set_xlabel("Position", fontsize=14, fontweight='bold')
     ax4.set_ylabel("Velocity", fontsize=14, fontweight='bold')
     ax4.set_title("Dynamic Phase Space")

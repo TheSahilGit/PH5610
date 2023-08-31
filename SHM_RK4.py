@@ -34,7 +34,10 @@ for t in range(nt-1):
     v[t+1] = v[t] + (k1v + 2*k2v + 2*k3v + k4v)*dt/6.0
     time[t+1] = time[t] + dt
 
-# Plotting
+#---------------------------------------------------------------
+#                           Plotting
+#---------------------------------------------------------------
+
 fig, axs = plt.subplots(2, 2, figsize=(10, 8))
 
 axs[0, 0].set_xlabel("Position", fontsize=14, fontweight='bold')

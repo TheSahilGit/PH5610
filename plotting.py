@@ -6,7 +6,8 @@ from matplotlib.animation import FuncAnimation
 n = 500
 
 theta = np.linspace(0, 2*np.pi, n)
-y = np.sin(theta) #+ 2 * np.sin(3*theta) + 2 * np.sin(10*theta)
+y = np.sin(theta) + 2 * np.sin(3*theta) + 3 * np.sin(10*theta)
+
 
 
 
@@ -18,7 +19,7 @@ plt.ylabel("Velocity", fontsize=14, fontweight='bold')
 plt.title("Static Plot", fontsize=14, fontweight='bold')
 
 
-# Dynamic plot
+# Dynamic Plot
 ax4 = plt.subplot(1,2,2)
 def update_plot(i):
     ax4.clear()
